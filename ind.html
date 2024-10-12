@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Event</title>
+    <title>Welcome to Qiskit Fall Fest 2024</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
@@ -65,12 +65,20 @@
         }
 
         .logo {
+            display: flex;
+            align-items: center; /* Align picture and text */
             font-size: 1.8rem;
             font-weight: bold;
             color: var(--primary-color);
             text-shadow: 0 0 10px var(--primary-color);
             cursor: pointer;
             transition: text-shadow 0.3s ease;
+        }
+
+        .logo img {
+            width: 150px; /* Adjust the size of the logo image */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 10px; /* Space between the logo image and text */
         }
 
         .logo:hover {
@@ -116,7 +124,9 @@
 
         .hero p {
             font-size: 1.2rem; /* Standard font size */
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;  /* Reduced margin */
+            align-content: center;
+            display: flex;
             color: var(--secondary-color);
             max-width: 90%; /* Responsive max-width */
         }
@@ -133,6 +143,7 @@
             border-radius: 5px;
             width: 100%; /* Full width for small screens */
             max-width: 300px; /* Limit width on larger screens */
+            margin-bottom: 1rem; /* Reduced margin to decrease gap */
         }
 
         .register-button:hover {
@@ -242,7 +253,10 @@
 <body>
     <canvas id="particles-canvas"></canvas>
     <header>
-        <div class="logo" onclick="scrollToTop()">College Event</div>
+        <div class="logo" onclick="scrollToTop()">
+            <img src="assets/qiskit_logo.png" alt="Logo Icon"> <!-- Replace with your logo image URL -->
+
+        </div>
         <nav>
             <ul>
                 <li><a href="#team">Team</a></li> <!-- Updated Link -->
@@ -254,46 +268,60 @@
 
     <main class="hero">
         <div class="container">
-            <h1>Welcome to Our College Event</h1>
+            <h1>Welcome to Qiskit Fall Fest 2024</h1>
             <p>Join us for an unforgettable experience filled with learning, networking, and fun!</p>
             <button class="register-button" onclick="window.location.href='https://forms.gle/WXcJhTv7ABWuF9176'">Register Now</button> <!-- Registration Link -->
+
+            <!-- New paragraph explaining the schedule -->
+            <p style= "margin: 2rem ; padding-top: 3rem ;">The full schedule of the event can be accessed through the link below:</p>
+
+            <!-- New Button for Schedule Link with spacing -->
+            <button class="register-button" style="margin-top: 0.5rem;" onclick="window.location.href='https://drive.google.com/drive/folders/your-google-drive-link'">View Event Schedule</button> <!-- Replace with your actual Google Drive link -->
         </div>
     </main>
+
+
 
     <section class="team" id="team"> <!-- Added ID to section -->
         <h2>Meet Our Team</h2>
         <div class="cards">
             <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Person 1">
-                <h3>John Doe</h3>
-                <p>Event Coordinator</p>
-                <p>John is responsible for organizing and overseeing all aspects of the event.</p>
+                <img src="https://via.placeholder.com/150" alt="Lead Organizer: Balaji Dodda">
+                <h3>Balaji Dodda</h3>
+                <p>Lead Organizer</p>
             </div>
+
             <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Person 2">
-                <h3>Jane Smith</h3>
-                <p>Marketing Lead</p>
-                <p>Jane handles all marketing strategies and promotional activities for the event.</p>
+                <img src="https://via.placeholder.com/150" alt="Co-organizer: Anuranjan Singh">
+                <h3>Anuranjan Singh</h3>
+                <p>Co-organizer</p>
             </div>
+
             <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Person 3">
-                <h3>Emily Johnson</h3>
-                <p>Logistics Manager</p>
-                <p>Emily ensures everything runs smoothly on the day of the event.</p>
+                <img src="https://via.placeholder.com/150" alt="Co-organizer: Prashik Somkuwar">
+                <h3>Prashik Somkuwar</h3>
+                <p>Co-organizer</p>
             </div>
+
             <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Person 4">
-                <h3>Michael Brown</h3>
-                <p>Speaker Coordinator</p>
-                <p>Michael is in charge of managing our keynote speakers and sessions.</p>
+                <img src="https://via.placeholder.com/150" alt="Co-organizer: Devaraju Phani Sri Prashanthi">
+                <h3> Devaraju Phani Sri Prashanthi</h3>
+                <p>Co-organizer</p>
             </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Co-organizer: Souvik Nandi">
+                <h3>Souvik Nandi</h3>
+                <p>Co-organizer</p>
+            </div>
+
         </div>
     </section>
 
     <section class="contact" id="contact">
         <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:info@collegeevent.com" style="color: var(--primary-color);">info@collegeevent.com</a></p>
-        <p>Email: <a href="mailto:support@collegeevent.com" style="color: var(--primary-color);">support@collegeevent.com</a></p>
+        <p>Email: <a href="mailto:nandi.souvik150@gmail.com " style="color: var(--primary-color);">Souvik Nandi</a></p>
+        <p>Email: <a href="mailto:anuranjansingh393@gmail.com" style="color: var(--primary-color);">Anuranjan Singh</a></p>
     </section>
 
     <script>
