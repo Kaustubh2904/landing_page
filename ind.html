@@ -79,6 +79,19 @@
             height: auto;
             margin-right: 10px;
         }
+        /* Add styles for the parent container */
+        .logo1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px; /* Full height of the viewport */
+            width: 100%;   /* Full width of the viewport */
+        }
+
+        .logo1 img {
+            width: 120px;
+            height: auto;
+        }
 
         .logo:hover {
             text-shadow: 0 0 20px var(--primary-color);
@@ -266,6 +279,9 @@
     <header>
         <div class="logo" onclick="scrollToTop()">
             <img src="assets/qiskit_logo.png" alt="Logo Icon">
+        </div>
+        <div class="logo1">
+            <img src="assets/ibm-logo-png-favpng-2GsfUHeXx9cz3v1tsabjCZMAV_t-removebg-preview.png" alt="Logo Icon">
         </div>
         <nav>
             <ul>
